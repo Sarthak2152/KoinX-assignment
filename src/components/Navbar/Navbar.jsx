@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../../public/images/logo.png";
 
 const links = ["Crypto Taxes", "Free Tools", "Resource Center"];
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
                 className="cursor-pointer font-semibold text-[#0F1629]"
                 key={index}
               >
-                {link}
+                <a href="#">{link}</a>
               </li>
             ))}
           </ul>
