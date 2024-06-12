@@ -12,12 +12,12 @@ function Team() {
         {team.map((member, index) => {
           return (
             <div
-              className="flex flex-row   rounded bg-[#E8F4FD] p-3  "
+              className="flex flex-col rounded   bg-[#E8F4FD] p-3 sm:flex-row  "
               key={index}
             >
               <div className="text-center">
                 <img
-                  className="max-w-28 rounded-md"
+                  className="mx-auto max-w-28 rounded-md"
                   src={member.image}
                   alt={member.name}
                 />

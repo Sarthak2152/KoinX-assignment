@@ -26,7 +26,7 @@ function TrendingCard() {
     fetchData();
   }, []);
   return (
-    <div className="space-y-6 rounded-lg bg-white p-6">
+    <div className="space-y-6 overflow-x-auto rounded-lg bg-white p-6">
       <h1 className="text-2xl font-semibold">Trending Coins (24h)</h1>
       {/* Currencies container*/}
       <div className="space-y-5">
@@ -42,7 +42,7 @@ function TrendingCard() {
                   src={currency.item.thumb}
                   alt={currency.item.name}
                 />
-                <h2>
+                <h2 className="overflow-hidden text-ellipsis">
                   {currency.item.name}({currency.item.symbol})
                 </h2>
               </div>

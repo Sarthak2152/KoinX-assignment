@@ -7,37 +7,41 @@ import Team from "./components/Team/Team";
 import Currencies from "./components/Carousel/Currencies";
 function App() {
   return (
-    <div className="min-h-screen bg-[#EFF2F5] ">
+    <div className="min-h-screen w-full  ">
       {/* Navbar */}
       <Navbar />
       {/* Body */}
-      <main className="mx-auto  max-w-[83rem]">
-        <p className=" py-4 text-[.88rem] font-normal text-[#334155]">
-          Cryptocurrencies &gt;&gt;
-          <span className="font-medium text-[#1E293B]">Bitcoin</span>
-        </p>
-        {/* crypto cards */}
-        <div className="grid grid-cols-3 gap-5">
-          {/* Column 1  */}
-          <div className="col-span-2 space-y-5 text-xl">
-            <About />
-            <Tokenomics />
-            <Team />
-          </div>
-          {/* Column 2 */}
-          <div className="space-y-5">
-            <GetStartedCard />
-            <TrendingCard />
+      <main className="mx-auto w-full  ">
+        <div className="bg-[#EFF2F5] px-[1.5rem] pb-4 sm:px-[3.5rem]">
+          <div className="mx-auto max-w-[83rem]">
+            <p className="py-4 text-[.88rem] font-normal text-[#334155]">
+              Cryptocurrencies &gt;&gt;
+              <span className="font-medium text-[#1E293B]">Bitcoin</span>
+            </p>
+            {/* crypto cards */}
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+              {/* Column 1  */}
+              <div className="col-span-2 space-y-5 text-xl">
+                <About />
+                <Tokenomics />
+                <Team />
+              </div>
+              {/* Column 2 */}
+              <div className="space-y-5">
+                <GetStartedCard />
+                <TrendingCard />
+              </div>
+            </div>
           </div>
         </div>
+        {/* Last section - you may also like */}
+        <section className="order-1 mt-6 bg-white px-[1.5rem] py-16 sm:mt-20 sm:px-[3.5rem]">
+          <div className="mx-auto max-w-[83rem]">
+            <Currencies heading={"You may also like"} />
+            <Currencies heading={"Trending Coins"} />
+          </div>
+        </section>
       </main>
-      {/* Last section - you may also like */}
-      <section className="mt-20 bg-white py-16">
-        <div className="mx-auto max-w-[83rem]">
-          <Currencies heading={"You may also like"} />
-          <Currencies heading={"Trending Coins"} />
-        </div>
-      </section>
     </div>
   );
 }

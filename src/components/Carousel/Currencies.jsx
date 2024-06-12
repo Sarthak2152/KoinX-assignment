@@ -19,7 +19,9 @@ function Card({ title, imageUrl, price, btc, sparkline }) {
           {btc?.toFixed(2)}%
         </span>
       </div>
-      <h1 className="text-xl font-medium text-[#171717]">{price}</h1>
+      <h1 className="text-xl font-medium text-[#171717]">
+        {Number(price).toFixed(4)}
+      </h1>
       <div className="py-2">
         <img
           src={sparkline}

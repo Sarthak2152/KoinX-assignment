@@ -7,7 +7,9 @@ function About() {
       <div className="flex flex-col gap-4">
         {/* what is bitcoin */}
         <div className="border-b border-[#c9cfdda9] pb-4 ">
-          <h2 className="mb-3 text-lg font-bold">What is Bitcoin?</h2>
+          <h2 className="mb-3 text-lg font-bold text-[#0B1426]">
+            What is Bitcoin?
+          </h2>
           <p className="text-base text-[#3E424A] ">
             Bitcoin&apos;s price today is US$16,951.82, with a 24-hour trading
             volume of $19.14 B. BTC is +0.36% in the last 24 hours. It is
@@ -18,7 +20,9 @@ function About() {
         </div>
         {/* Lorem*/}
         <div className="border-b border-[#c9cfdda9] pb-4 ">
-          <h2 className="mb-3 text-lg font-bold">Lorem ipsum dolor sit amet</h2>
+          <h2 className="mb-3 text-lg font-bold text-[#0B1426]">
+            Lorem ipsum dolor sit amet
+          </h2>
           <div className="space-y-4">
             <p className="text-base text-[#3E424A]">
               Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit
@@ -50,7 +54,7 @@ function About() {
         </div>
         {/* Holding BTC */}
         <div className="border-b border-[#c9cfdda9] pb-4">
-          <h1 className="mb-2 text-2xl font-semibold">
+          <h1 className="mb-2 text-2xl font-semibold text-[#0F1629]">
             Already Holding Bitcoin?
           </h1>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

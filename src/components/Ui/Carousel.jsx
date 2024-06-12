@@ -12,7 +12,34 @@ SwiperCore.use([Navigation, A11y]);
 function Carousel({ children, slides, space }) {
   return (
     <div>
-      <Swiper slidesPerView={slides} spaceBetween={space} navigation>
+      <Swiper
+        slidesPerView={slides}
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+          },
+          400: {
+            slidesPerView: 2,
+          },
+          639: {
+            slidesPerView: 3,
+          },
+          865: {
+            slidesPerView: 4,
+          },
+          1000: {
+            slidesPerView: 5,
+          },
+          1500: {
+            slidesPerView: 6,
+          },
+          1700: {
+            slidesPerView: 7,
+          },
+        }}
+        spaceBetween={space}
+        navigation
+      >
         {children}
       </Swiper>
     </div>
