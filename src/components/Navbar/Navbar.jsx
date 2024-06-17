@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../../public/images/logo.png";
+import Logo from "../../images/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 const links = ["Crypto Taxes", "Free Tools", "Resource Center"];
 import { RxCross1 } from "react-icons/rx";

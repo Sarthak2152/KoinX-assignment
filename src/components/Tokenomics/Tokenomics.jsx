@@ -1,3 +1,4 @@
+import distributionImage from "../../images/distribution.svg";
 function Tokenomics() {
   return (
     <section className="space-y-6 rounded-lg bg-white p-6">
@@ -6,7 +7,21 @@ function Tokenomics() {
         <h2 className="text-xl font-semibold text-[#1D1D1D]">
           Initial distribution
         </h2>
-        <div className="h-48"></div>
+        <div className="mt-3 flex h-48 items-center gap-8">
+          <div>
+            <img src={distributionImage} />
+          </div>
+          <div className=" text-base text-[#202020]">
+            <div className="flex items-center gap-2">
+              <span className="inline-block h-3 w-3 rounded-full bg-[#0082FF]"></span>
+              <p>Crowdsale investors: 80%</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="inline-block h-3 w-3 rounded-full bg-[#FAA002]"></span>
+              <p>Foundation: 20%</p>
+            </div>
+          </div>
+        </div>
         <p className="text-base text-[#3E424A] ">
           Lorem ipsum dolor sit amet consectetur. Cras aliquet tristique ornare
           vestibulum nunc dignissim vel consequat. Leo etiam nascetur bibendum

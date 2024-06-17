@@ -32,6 +32,29 @@ function Card({ title, imageUrl, price, btc, sparkline }) {
     </div>
   );
 }
+const breakpoints = {
+  0: {
+    slidesPerView: 2,
+  },
+  400: {
+    slidesPerView: 2,
+  },
+  639: {
+    slidesPerView: 3,
+  },
+  865: {
+    slidesPerView: 4,
+  },
+  1000: {
+    slidesPerView: 5,
+  },
+  1500: {
+    slidesPerView: 6,
+  },
+  1700: {
+    slidesPerView: 7,
+  },
+};
 function Currencies({ heading }) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -62,7 +85,7 @@ function Currencies({ heading }) {
     <div className="space-y-5 pb-7">
       <h1 className="text-2xl font-semibold text-[#202020]">{heading}</h1>
       {loading === false && data ? (
-        <Carousel slides={5} space={10}>
+        <Carousel breakpoints={breakpoints} slides={5} space={10}>
           {data.map((card) => (
             <SwiperSlide key={card?.item.id}>
               <Card

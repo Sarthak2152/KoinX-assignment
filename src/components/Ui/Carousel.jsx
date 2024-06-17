@@ -9,34 +9,12 @@ import "swiper/css/scrollbar";
 
 SwiperCore.use([Navigation, A11y]);
 
-function Carousel({ children, slides, space }) {
+function Carousel({ children, breakpoints, slides, space }) {
   return (
     <div>
       <Swiper
         slidesPerView={slides}
-        breakpoints={{
-          0: {
-            slidesPerView: 2,
-          },
-          400: {
-            slidesPerView: 2,
-          },
-          639: {
-            slidesPerView: 3,
-          },
-          865: {
-            slidesPerView: 4,
-          },
-          1000: {
-            slidesPerView: 5,
-          },
-          1500: {
-            slidesPerView: 6,
-          },
-          1700: {
-            slidesPerView: 7,
-          },
-        }}
+        breakpoints={breakpoints}
         spaceBetween={space}
         navigation
       >

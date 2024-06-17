@@ -1,4 +1,4 @@
-import GettingStarted from "../../../public/images/GettingStarted.png";
+import GettingStarted from "../../images/GettingStarted.png";
 import { FaArrowRight } from "react-icons/fa";
 function GetStartedCard() {
   return (
