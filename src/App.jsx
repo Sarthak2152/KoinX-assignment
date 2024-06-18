@@ -6,6 +6,8 @@ import Tokenomics from "./components/Tokenomics/Tokenomics";
 import Team from "./components/Team/Team";
 import Currencies from "./components/Carousel/Currencies";
 import Sentiment from "./components/Sentiment/Sentiment";
+import Btc from "./components/Btc/Btc";
+import Performance from "./components/Overview/Performance";
 function App() {
   return (
     <div className="min-h-screen w-full  ">
@@ -23,6 +25,8 @@ function App() {
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
               {/* Column 1  */}
               <div className="col-span-2 space-y-5 text-xl">
+                <Btc />
+                <Performance />
                 <Sentiment />
                 <About />
                 <Tokenomics />

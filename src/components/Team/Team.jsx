@@ -1,3 +1,6 @@
+import one from "../../images/one.png";
+import two from "../../images/two.png";
+import three from "../../images/three.png";
 function Team() {
   return (
     <section className="space-y-6 rounded-lg bg-white p-6">
@@ -46,20 +49,20 @@ export default Team;
 const team = [
   {
     name: "John Smith",
-    image: "../../images/three.png",
+    image: one,
     designation: "Designation Here",
     info: "Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu",
   },
   {
     name: "Elina Williams",
     designation: "Designation Here",
-    image: "../../images/two.png",
+    image: two,
     info: "Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu",
   },
   {
     name: "John Smith",
     designation: "Designation Here",
-    image: "../../images/one.png",
+    image: three,
     info: "Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu",
   },
 ];
